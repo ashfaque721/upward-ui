@@ -67,10 +67,14 @@ button {
 button.learn-more {
   width: 14rem;
   height: auto;
+}
+
+.btn--animated {
   animation: moveUp 0.5s ease-in;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
+
 button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;

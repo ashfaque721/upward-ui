@@ -140,7 +140,9 @@ button {
 
 button.learn-more {
   width: 14rem;
-  height: auto;
+  height: auto; }
+
+.btn--animated {
   animation: moveUp 0.5s ease-in;
   animation-delay: 0.5s;
   animation-fill-mode: backwards; }
