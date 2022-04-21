@@ -1,24 +1,24 @@
 .btn--svg {
   color: #000;
   cursor: pointer;
-  font-size: 20px;
-  line-height: 53px;
+  font-size: 2rem;
+  line-height: 5.3rem;
 
   position: relative;
   text-decoration: none;
-  width: 118px;
+  width: 11.8rem;
   text-align: center;
-  background: #3ba55d;
+  background: $color-primary;
   font-weight: 500;
   transition: all 0.3s;
 }
 
 .btn--svg svg {
-  height: 54px;
+  height: 5.4rem;
   left: 0;
   position: absolute;
   top: 0;
-  width: 118px;
+  width: 11.8rem;
 }
 
 .btn--svg rect {
@@ -30,9 +30,9 @@
 }
 
 .btn--svg:hover {
-  background: #3ba55d;
+  background: $color-primary-dark;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   color: #fff;
   text-decoration: none;
 }
@@ -46,7 +46,7 @@
 /*learn more button*/
 div.button-container {
   position: relative;
-  top: -34px;
+  top: -3.4rem;
   margin-top: 3rem;
 }
 
@@ -81,9 +81,9 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #3ba55d;
+  background: $color-primary-dark;
   border-radius: 1.625rem;
-  box-shadow: 0px 0px 3px 1px white;
+  box-shadow: 0 0 0.3rem 0.1rem rgba($color-primary-dark, 0.4);
 }
 button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -155,7 +155,7 @@ a.btn--read-more {
   position: relative;
   transition: 0.3s all;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   font-size: 1.8rem;
   /* font-weight: 900; */
 }

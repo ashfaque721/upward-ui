@@ -51,7 +51,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   text-align: center;
   margin-top: 5rem;
   /* text-shadow: 1px 1px 1px #816666; */ }
@@ -87,17 +87,32 @@ body {
 .heading-tertiary {
   display: block;
   width: 1.5%;
+  height: 25rem;
   font-size: inherit;
   line-height: 1.2;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.3), rgba(40, 180, 133, 0.9));
+  background-image: linear-gradient(to right, rgba(116, 192, 252, 0.3), rgba(24, 100, 171, 0.9));
   margin-right: 10rem;
-  justify-content: center; }
+  justify-content: center;
+  transition: all 1s cubic-bezier(0.93, -0.58, 0.07, 1.66); }
+  .heading-tertiary:hover {
+    width: 80%;
+    border-radius: 1rem; }
 
 .testimonial-title {
   text-align: center;
   padding-top: 8rem;
   font-size: 4.8rem; }
+
+.title--animated {
+  transition: all 0.3s;
+  background: linear-gradient(to right, #000 50%, #74c0fc 50%, #087f5b);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  .title--animated:hover {
+    background-position: -100%; }
 
 .u-center-text {
   text-align: center; }
@@ -128,22 +143,22 @@ body {
 .btn--svg {
   color: #000;
   cursor: pointer;
-  font-size: 20px;
-  line-height: 53px;
+  font-size: 2rem;
+  line-height: 5.3rem;
   position: relative;
   text-decoration: none;
-  width: 118px;
+  width: 11.8rem;
   text-align: center;
-  background: #3ba55d;
+  background: #339af0;
   font-weight: 500;
   transition: all 0.3s; }
 
 .btn--svg svg {
-  height: 54px;
+  height: 5.4rem;
   left: 0;
   position: absolute;
   top: 0;
-  width: 118px; }
+  width: 11.8rem; }
 
 .btn--svg rect {
   fill: none;
@@ -153,9 +168,9 @@ body {
   transition: all 0.35s linear; }
 
 .btn--svg:hover {
-  background: #3ba55d;
+  background: #1864ab;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   color: #fff;
   text-decoration: none; }
 
@@ -168,7 +183,7 @@ body {
 /*learn more button*/
 div.button-container {
   position: relative;
-  top: -34px;
+  top: -3.4rem;
   margin-top: 3rem; }
 
 button {
@@ -200,9 +215,9 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #3ba55d;
+  background: #1864ab;
   border-radius: 1.625rem;
-  box-shadow: 0px 0px 3px 1px white; }
+  box-shadow: 0 0 0.3rem 0.1rem rgba(24, 100, 171, 0.4); }
 
 button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -269,7 +284,7 @@ a.btn--read-more {
   position: relative;
   transition: 0.3s all;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   font-size: 1.8rem;
   /* font-weight: 900; */ }
 
@@ -316,10 +331,11 @@ a.btn--read-more:hover::after {
   height: 100%; }
   .user-img img {
     height: 100%;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    aspect-ratio: 7 / 9; }
 
 .user-text {
-  background: #243a59;
+  background: #000;
   width: 52rem;
   height: 27rem;
   position: absolute;
@@ -332,10 +348,12 @@ a.btn--read-more:hover::after {
   z-index: 2; }
   .user-text p {
     font-size: 1.6rem;
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-weight: 500; }
   .user-text h3 {
     margin: 3.5rem 0 0.5rem;
-    color: #fff; }
+    color: #fff;
+    font-weight: 900; }
 
 .container {
   width: 80rem;
@@ -454,20 +472,7 @@ img.img {
   margin-left: 5rem; }
 
 .header {
-  height: 100vh !important;
-  position: relative;
-  display: block;
-  background-image: url(../img/clrBanner.png);
-  background-blend-mode: white;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
-  position: relative; }
+  z-index: 1000; }
   .header .nav {
     display: flex;
     align-items: center;
@@ -498,14 +503,14 @@ img.img {
       padding: 1rem 2rem;
       font-weight: 500;
       border-radius: 0.6rem;
-      box-shadow: 0rem 0.1rem 0.8rem 0.2rem rgba(41, 124, 68, 0.4);
+      box-shadow: 0rem 0.1rem 0.8rem 0.2rem rgba(116, 192, 252, 0.2);
       transition: all 0.4s;
       box-sizing: border-box;
       position: relative;
       text-decoration: none; }
       .header .nav__menu__item:hover {
         color: #fff;
-        background-color: #3ba55d;
+        background-color: #339af0;
         border-radius: 1.2rem; }
   .header__container {
     align-items: center;
@@ -514,7 +519,7 @@ img.img {
 ul.dropdown__menu {
   position: absolute;
   display: block;
-  background: #36393f;
+  background: #fff;
   /* box-sizing: border-box; */
   width: 20.9rem;
   top: 13.2rem;
@@ -522,31 +527,52 @@ ul.dropdown__menu {
   opacity: 0;
   z-index: 1000;
   box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem #e6ede8;
-  border-top: 0.5rem rgba(41, 124, 68, 0.4) solid; }
+  border-top: 0.5rem rgba(95, 61, 196, 0.9) solid; }
 
 ul.dropdown__menu li {
   box-sizing: border-box;
   text-align: left;
-  background-color: #36393f; }
+  background-color: #000;
+  transition: all 0.3s; }
 
 .dropdown:hover ul.dropdown__menu {
   transform: scaleY(1);
   top: 9.2rem;
-  opacity: 1; }
+  opacity: 1;
+  color: #000; }
 
 ul.dropdown__menu li a {
   display: block;
   padding: 2rem 0 2rem 2rem;
-  color: aquamarine; }
+  color: #fff; }
 
 ul.dropdown__menu li:hover {
-  background-color: rgba(228, 240, 233, 0.4); }
+  background-color: rgba(116, 192, 252, 0.4);
+  color: #000; }
 
 .dropdown__link {
   text-decoration: none; }
+  .dropdown__link:hover {
+    color: #000; }
 
 .dropdown ul li {
   list-style: none; }
+
+.section-hero {
+  position: relative;
+  height: 100vh !important;
+  position: relative;
+  display: block;
+  background-image: url(../img/clrBanner.png);
+  background-blend-mode: white;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top; }
 
 .section-focus {
   background-color: #f7f7f7;
@@ -559,7 +585,8 @@ ul.dropdown__menu li:hover {
   margin-top: -30vh; }
 
 .section-testimonials {
-  background: #000;
+  background-image: linear-gradient(to right bottom, #087f5b, #1864ab);
   height: 100vh;
   width: 100%;
-  position: relative; }
+  position: relative;
+  color: #000; }

@@ -1,20 +1,5 @@
 .header {
-  height: 100vh !important;
-
-  position: relative;
-  display: block;
-  background-image: url(../img/clrBanner.png);
-  background-blend-mode: darken(white, 0.1);
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
-  position: relative;
-
+  z-index: 1000;
   .nav {
     display: flex;
     align-items: center;
@@ -54,7 +39,8 @@
 
         font-weight: 500;
         border-radius: 0.6rem;
-        box-shadow: 0rem 0.1rem 0.8rem 0.2rem rgba(41, 124, 68, 0.4);
+        box-shadow: 0rem 0.1rem 0.8rem 0.2rem
+          rgba($color-primary-light, 0.2);
         transition: all 0.4s;
         box-sizing: border-box;
         position: relative;
@@ -63,7 +49,7 @@
 
         &:hover {
           color: #fff;
-          background-color: rgb(59, 165, 93);
+          background-color: rgba($color-primary, 1);
           border-radius: 1.2rem;
         }
       }
@@ -79,7 +65,7 @@
 ul.dropdown__menu {
   position: absolute;
   display: block;
-  background: rgb(54, 57, 63);
+  background: #fff;
   /* box-sizing: border-box; */
   width: 20.9rem;
   top: 13.2rem;
@@ -88,33 +74,40 @@ ul.dropdown__menu {
   opacity: 0;
   z-index: 1000;
   box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem #e6ede8;
-  border-top: 0.5rem rgba(41, 124, 68, 0.4) solid;
+  border-top: 0.5rem rgba(#5f3dc4, 0.9) solid;
 }
 ul.dropdown__menu li {
   box-sizing: border-box;
 
   text-align: left;
 
-  background-color: rgb(54, 57, 63);
+  background-color: #000;
+  transition: all 0.3s;
 }
 
 .dropdown:hover ul.dropdown__menu {
   transform: scaleY(1);
   top: 9.2rem;
   opacity: 1;
+  color: #000;
 }
 
 ul.dropdown__menu li a {
   display: block;
   padding: 2rem 0 2rem 2rem;
-  color: aquamarine;
+  color: #fff;
 }
 ul.dropdown__menu li:hover {
-  background-color: rgba(228, 240, 233, 0.4);
+  background-color: rgba(rgba($color-primary-light, 0.2), 0.4);
+  color: #000;
 }
 
 .dropdown__link {
   text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
 }
 
 .dropdown {
