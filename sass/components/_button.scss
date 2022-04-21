@@ -1,5 +1,5 @@
 .btn--svg {
-  color: #fff;
+  color: #000;
   cursor: pointer;
   font-size: 20px;
   line-height: 53px;
@@ -44,10 +44,9 @@
 }
 
 /*learn more button*/
-div#button-container {
+div.button-container {
   position: relative;
   top: -34px;
-  transform: scale(1.5);
   margin-top: 3rem;
 }
 
@@ -144,4 +143,46 @@ button:hover .button-text {
   font-family: sans-serif;
   font-weight: 600;
   padding: 0 0.4rem;
+}
+
+// Read More Button
+
+a.btn--read-more {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  transition: 0.3s all;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  /* font-weight: 900; */
+}
+a.btn--read-more:hover {
+  letter-spacing: 0.5px;
+}
+
+a.btn--read-more::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #dee9e966;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: 0.3s all;
+}
+a.btn--read-more:hover::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #f4f5f51c;
+  top: 0;
+  left: 0;
+  transform: scaleX(1);
 }

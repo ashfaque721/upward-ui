@@ -94,6 +94,11 @@ body {
   margin-right: 10rem;
   justify-content: center; }
 
+.testimonial-title {
+  text-align: center;
+  padding-top: 8rem;
+  font-size: 4.8rem; }
+
 .u-center-text {
   text-align: center; }
 
@@ -112,8 +117,16 @@ body {
 .u-mt-huge {
   margin-top: 10rem; }
 
+.u-btn-scale {
+  transform: scale(1.5); }
+
+.u-btn-center {
+  top: 50%;
+  left: 45%;
+  transform: scale(1.5); }
+
 .btn--svg {
-  color: #fff;
+  color: #000;
   cursor: pointer;
   font-size: 20px;
   line-height: 53px;
@@ -153,10 +166,9 @@ body {
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
 
 /*learn more button*/
-div#button-container {
+div.button-container {
   position: relative;
   top: -34px;
-  transform: scale(1.5);
   margin-top: 3rem; }
 
 button {
@@ -249,6 +261,113 @@ button:hover .button-text {
   font-weight: 600;
   padding: 0 0.4rem; }
 
+a.btn--read-more {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  transition: 0.3s all;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  /* font-weight: 900; */ }
+
+a.btn--read-more:hover {
+  letter-spacing: 0.5px; }
+
+a.btn--read-more::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #dee9e966;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: 0.3s all; }
+
+a.btn--read-more:hover::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #f4f5f51c;
+  top: 0;
+  left: 0;
+  transform: scaleX(1); }
+
+.slide-row {
+  display: flex;
+  width: 240rem;
+  transition: all 0.5s; }
+
+.slide-col {
+  width: 80rem;
+  height: 40rem;
+  position: relative; }
+
+.user-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%; }
+  .user-img img {
+    height: 100%;
+    border-radius: 1rem; }
+
+.user-text {
+  background: #243a59;
+  width: 52rem;
+  height: 27rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 1rem;
+  color: #d3d4d6;
+  padding: 4.5rem;
+  z-index: 2; }
+  .user-text p {
+    font-size: 1.6rem;
+    line-height: 1.2; }
+  .user-text h3 {
+    margin: 3.5rem 0 0.5rem;
+    color: #fff; }
+
+.container {
+  width: 80rem;
+  height: 40rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5rem; }
+
+.indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5rem; }
+  .indicator__btn {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.4rem;
+    border-radius: 1.5rem;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.5s; }
+    .indicator__btn.active {
+      width: 4.5rem; }
+
+.testimonial {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
 .focus__container {
   display: grid;
   grid-auto-flow: column;
@@ -292,6 +411,47 @@ button:hover .button-text {
   flex-direction: row;
   align-items: center;
   justify-content: center; }
+
+.featured-articles {
+  margin: auto;
+  max-width: 114rem;
+  color: black; }
+
+#articlesHeader {
+  margin: 15rem 0 2.4rem 0;
+  font-size: 6.4rem;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 900; }
+
+.articles {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem; }
+
+.articles-text {
+  flex: 0 0 62.66667%;
+  max-width: 66.66667%;
+  padding-top: 2rem; }
+
+h1#articles-topic {
+  font-size: 4.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+p.articles-main-text {
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 500; }
+
+img.img {
+  width: 36.5rem; }
+
+.articlesimg {
+  margin-left: 5rem; }
 
 .header {
   height: 100vh !important;
@@ -393,3 +553,13 @@ ul.dropdown__menu li:hover {
   padding: 25rem 0;
   margin-top: -20vh;
   color: #000; }
+
+.section-featured {
+  padding: 20rem 0;
+  margin-top: -30vh; }
+
+.section-testimonials {
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  position: relative; }
