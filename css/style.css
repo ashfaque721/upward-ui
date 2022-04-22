@@ -92,6 +92,7 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   background-image: linear-gradient(to right, rgba(116, 192, 252, 0.3), rgba(24, 100, 171, 0.9));
+  text-align: center;
   margin-right: 10rem;
   justify-content: center;
   transition: all 1s cubic-bezier(0.93, -0.58, 0.07, 1.66); }
