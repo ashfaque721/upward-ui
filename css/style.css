@@ -390,7 +390,11 @@ a.btn--read-more:hover::after {
 .focus__container {
   display: grid;
   grid-auto-flow: column;
-  flex: 5; }
+  flex: 5;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
 
 .focus__shape {
   position: relative;
@@ -428,7 +432,7 @@ a.btn--read-more:hover::after {
 .flex__container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-content: center;
   justify-content: center; }
 
 .featured-articles {

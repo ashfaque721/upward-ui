@@ -3,6 +3,10 @@
     display: grid;
     grid-auto-flow: column;
     flex: 5;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
 
   &__shape {
@@ -49,6 +53,6 @@
 .flex__container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-content: center;
   justify-content: center;
 }
