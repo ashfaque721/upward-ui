@@ -40,3 +40,12 @@
     transform: translate(0);
   }
 }
+
+@keyframes moving {
+  0% {
+    left: -2rem;
+  }
+  100% {
+    left: 100%;
+  }
+}
